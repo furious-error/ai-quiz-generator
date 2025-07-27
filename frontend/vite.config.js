@@ -8,5 +8,5 @@ export default defineConfig({
     react(), 
     tailwindcss(),
   ],
-  base: '/ai-quiz-generator/',
+  base: '/ai-quiz-generator',
 })

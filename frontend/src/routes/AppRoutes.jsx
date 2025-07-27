@@ -27,7 +27,7 @@ const ProtectedRoute = ({ children }) => {
     }
 
     if (!isAuthenticated) {
-        return <Navigate to="/ai-quiz-generator" replace />;
+        return <Navigate to="/" replace />;
     }
 
     return children;
@@ -48,7 +48,7 @@ const AppRoutes = () => {
         <Routes>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
-            <Route path="/ai-quiz-generator" element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <LandingPage />} />
+            <Route path="/" element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <LandingPage />} />
             <Route
                 path="/dashboard"
                 element={

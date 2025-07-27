@@ -14,7 +14,7 @@ function NotFoundPage() {
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-md">
                 Oops! The page you're looking for doesn't exist or has been moved.
             </p>
-            <Link to="/ai-quiz-generator">
+            <Link to="/">
                 <Button className="py-3 px-8 text-lg bg-blue-600 hover:bg-blue-700 focus:ring-blue-500">
                     Go to Homepage
                 </Button>

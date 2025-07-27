@@ -8,6 +8,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename='/ai-quiz-generator'>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

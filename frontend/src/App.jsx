@@ -1,7 +1,6 @@
 // src/App.js
 
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import AppRoutes from './routes/AppRoutes';          
 import Navbar from './components/layout/Navbar';       
@@ -10,7 +9,6 @@ import './index.css';
 
 function App() {
   return (
-    <Router basename='/ai-quiz-generator'>
       <AuthProvider>
         <div className="flex flex-col min-h-screen font-inter">
           <Navbar />
@@ -20,7 +18,6 @@ function App() {
           <Footer />
         </div>
       </AuthProvider>
-    </Router>
   );
 }
 
