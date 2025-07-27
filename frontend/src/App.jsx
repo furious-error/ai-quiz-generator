@@ -10,7 +10,7 @@ import './index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/ai-quiz-generator'>
       <AuthProvider>
         <div className="flex flex-col min-h-screen font-inter">
           <Navbar />
