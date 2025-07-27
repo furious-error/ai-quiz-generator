@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r ai_quiz"
+    "deploy": "gh-pages -d dist -r https://github.com/furious-error/ai-quiz-generator.git"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
