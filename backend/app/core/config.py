@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     GEMINI_API_KEY: str
 
     # CORS settings
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:5173"] # Default for development
+    ALLOWED_ORIGINS: List[str] = ["https://furious-error.github.io/ai-quiz-generator/"] # Default for development
 
     # Rate limiting settings
     DAILY_AI_REQUEST_LIMIT: int
