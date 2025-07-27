@@ -4,7 +4,7 @@ import axios from 'axios';
 import { getToken, removeToken } from '../utils/token'; 
 
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = "https://ai-quiz-generator-3xiq.onrender.com/api/v1";
 
 if (!API_BASE_URL) {
     console.error("VITE_API_BASE_URL is not defined in your .env file.");

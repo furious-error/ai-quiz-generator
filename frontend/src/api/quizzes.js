@@ -11,7 +11,7 @@ export const generateQuiz = async (quizInput) => {
         const response = await apiClient.post('/quizzes/generate', quizInput);
         return response.data;
     } catch (error) {
-        console.error('API Error: generateQuiz', error.response?.data || error.message);
+        // console.error('API Error: generateQuiz', error.response?.data || error.message);
         throw error.response?.data || error.message;
     }
 };
@@ -36,7 +36,7 @@ export const generateQuizFromFile = async (file, numQuestions, difficulty) => {
         });
         return response.data;
     } catch (error) {
-        console.error('API Error: generateQuizFromFile', error.response?.data || error.message);
+        // console.error('API Error: generateQuizFromFile', error.response?.data || error.message);
         throw error.response?.data || error.message;
     }
 };
@@ -52,7 +52,7 @@ export const submitQuiz = async (quizId, submissionData) => {
         const response = await apiClient.post(`/quizzes/${quizId}/submit`, submissionData);
         return response.data;
     } catch (error) {
-        console.error('API Error: submitQuiz', error.response?.data || error.message);
+        // console.error('API Error: submitQuiz', error.response?.data || error.message);
         throw error.response?.data || error.message;
     }
 };
@@ -66,7 +66,7 @@ export const getUserQuizzes = async () => {
         const response = await apiClient.get('/quizzes/'); 
         return response.data;
     } catch (error) {
-        console.error('API Error: getUserQuizzes', error.response?.data || error.message);
+        // console.error('API Error: getUserQuizzes', error.response?.data || error.message);
         throw error.response?.data || error.message;
     }
 };
@@ -81,7 +81,7 @@ export const getQuizById = async (quizId) => {
         const response = await apiClient.get(`/quizzes/${quizId}`);
         return response.data;
     } catch (error) {
-        console.error('API Error: getQuizById', error.response?.data || error.message);
+        // console.error('API Error: getQuizById', error.response?.data || error.message);
         throw error.response?.data || error.message;
     }
 };

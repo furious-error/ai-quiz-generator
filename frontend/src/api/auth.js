@@ -4,7 +4,7 @@ import apiClient from './index';
 
 export const registerUser = async (userData) => {
     try {
-        console.log({userData});
+        // console.log({userData});
         const response = await apiClient.post('/auth/register', userData);
         return response.data; 
     } catch (error) {
